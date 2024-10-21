@@ -1,4 +1,21 @@
-# vba-challenge
+#VBA_challenge
+Sub multiple_year_stock_data
+For r=2 to 93001
+    if cells(r,1).value<>cells(r+1,1).value then
+    cells(2,"i").value=cells(r,1).value then
+    msgbox(cells(r,1).value)
+
+
+
+
+
+
+
+
+
+
+
+
 Sub calculatePercentageChange()
     Dim out_row As Long
     Dim r As Long
@@ -9,14 +26,7 @@ Sub calculatePercentageChange()
     
     out_row = 2
     lastRow = 99301
-    
-    ' Check if the cell is numeric before assigning
-    If IsNumeric(Cells(2, 1).Value) Then
-        previousValue = CDbl(Cells(2, 1).Value)
-    Else
-        MsgBox "The value in cell A2 is not numeric."
-        Exit Sub
-    End If
+    previousValue = Cells(2, 1).Value
 
     For r = 2 To lastRow
         currentValue = Cells(r, 1).Value
